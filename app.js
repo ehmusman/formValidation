@@ -56,7 +56,7 @@ function userName(){
   const uname = document.getElementById('username');
   const re = /\s/;
   // const length = /{4,20}/;
-  if(re.test(uname.value)){
+  if(re.test(uname.value) || uname.value.length === 0){
     const text = "Don't Use Blank Spaces in Username";
     if(uname.nextSibling){
       uname.nextSibling.remove();
