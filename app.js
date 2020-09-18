@@ -7,7 +7,10 @@ document.getElementById("zip").addEventListener('blur',zip);
 document.getElementById("password").addEventListener('blur',password);
 document.getElementById("confirmPassword").addEventListener('keyup',confirmPassword);
 
-
+document.getElementById('reset').addEventListener('click',reset);
+function reset(){
+  location.reload();
+}
 function firstName(){
   const fname = document.getElementById('fname');
   const re = /^([A-Z][a-zA-Z_\-\.\ ]{3,15})$/;
