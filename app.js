@@ -10,7 +10,7 @@ document.getElementById("confirmPassword").addEventListener('keyup',confirmPassw
 
 function firstName(){
   const fname = document.getElementById('fname');
-  const re = /^([A-Z][a-zA-Z]{3,11})$/;
+  const re = /^([A-Z][a-zA-Z_\-\.\ ]{3,15})$/;
   if(!re.test(fname.value)){
     const text = "Use first letter capital,Don't use numeric, length should be 4-12";
     if(fname.nextSibling){
@@ -31,7 +31,7 @@ function firstName(){
 }
 function lastName(){
   const lname = document.getElementById('lname');
-  const re = /^([A-Z][a-zA-Z]{3,11})$/;
+  const re = /^([A-Z][a-zA-Z_\-\.\ ]{3,15})$/;
   if(!re.test(lname.value)){
     const text = "Use first letter capital,Don't use numeric, length should be 4-12";
     if(lname.nextSibling){
